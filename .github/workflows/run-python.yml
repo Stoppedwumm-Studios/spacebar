@@ -28,7 +28,7 @@ jobs:
       run: |
         pyinstaller --onefile run.py
       
-     - uses: actions/checkout@v3
+    - uses: actions/checkout@v3
       with:
         ref: ${{ github.head_ref }}
         fetch-depth: 0
