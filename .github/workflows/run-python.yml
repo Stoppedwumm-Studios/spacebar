@@ -43,6 +43,6 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        force_with_lease: true
+        force: true
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: Stoppedwumm-Studios/spacebar@main
