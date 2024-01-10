@@ -1,0 +1,7 @@
+    - uses: actions/checkout@v3
+    - uses: jimkring/action-python-nogil@0.1
+      with:
+        # install requirements
+        requirements-file: requirements.txt
+        # command is required 
+        command: python -V
