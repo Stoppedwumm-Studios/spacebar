@@ -35,9 +35,14 @@ jobs:
     - name: Commit files
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        echo "Mail working"
         git config --local user.name "github-actions[bot]"
+        echo "Name working"
         git commit -a -m "Add changes"
+        echo "Commit worked"
     - name: Push changes
-      uses: ad-m/github-push-action@main
+      uses: ad-m/github-push-action@master
       with:
         force_with_lease: true
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: Stoppedwumm-Studios/spacebar@main
