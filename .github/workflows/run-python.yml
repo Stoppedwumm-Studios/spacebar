@@ -30,7 +30,6 @@ jobs:
       run: |
         pyinstaller --onefile run.py
   release:
-    build:
     name: Create Release
     runs-on: ubuntu-latest
     steps:
