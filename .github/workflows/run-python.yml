@@ -31,7 +31,7 @@ jobs:
         pyinstaller --onefile run.py
     - name: List directory
       run: |
-        ls
+        ls build
       
     - uses: actions/checkout@v2
       with:
