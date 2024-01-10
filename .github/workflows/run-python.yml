@@ -5,3 +5,4 @@
         requirements-file: requirements.txt
         # command is required 
         command: python -V
+        command2: py run.py
