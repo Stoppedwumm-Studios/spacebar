@@ -30,7 +30,7 @@ jobs:
       run: |
         pyinstaller --onefile run.py
       
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
       with:
         ref: ${{ github.head_ref }}
         fetch-depth: 0
@@ -42,4 +42,4 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        branch: main
+        force_with_lease: true
