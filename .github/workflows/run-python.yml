@@ -29,6 +29,10 @@ jobs:
     - name: Build to exe
       run: |
         pyinstaller --onefile run.py
+    - name: List directory
+      run: |
+        ls
+      
     - uses: actions/checkout@v2
       with:
         persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
