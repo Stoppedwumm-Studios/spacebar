@@ -32,6 +32,7 @@ jobs:
       uses: elgohr/Github-Release-Action@v5
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
-        workdir: dist
       with:
+        GH_TOKEN: ${{ github.token }}
         title: MyReleaseMes
+        workdir: dist
