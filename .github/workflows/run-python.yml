@@ -29,4 +29,4 @@ jobs:
       
     - name: Testing
       run: |
-        ls
+        ls dist
