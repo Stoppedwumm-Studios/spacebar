@@ -30,3 +30,4 @@ jobs:
     - name: Testing
       run: |
         ls dist
+        ls dist/run
