@@ -28,5 +28,5 @@ jobs:
         pyinstaller --onefile run.py
       
     - name: Testing
-     run: |
+      run: |
         ls
