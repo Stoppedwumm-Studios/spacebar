@@ -28,6 +28,6 @@ jobs:
       run: |
         pyinstaller --onefile run.py
       
-    -name: Testing windows-latest
+    - name: Testing windows-latest
      run: |
         dir
