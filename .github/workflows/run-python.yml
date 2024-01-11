@@ -44,3 +44,9 @@ jobs:
       run: |
         rm -r dist
         rm -r build
+  gatherInformation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Who triggered
+      run: echo ${{ GITHUB_ACTOR }}
