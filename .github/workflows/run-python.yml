@@ -28,9 +28,8 @@ jobs:
         pyinstaller --onefile run.py   
     - name: "Build & test"
       run: |
-        cd build
-        cd run
-        ls
+        cd dist
+        chmod +x run
         
     - name: "Create Release"
       uses: "marvinpinto/action-automatic-releases@latest"
@@ -40,4 +39,8 @@ jobs:
         prerelease: false
         title: "Latest Build"
         files: |
-          dist/run.exe
+          dist/run
+    - name: Post Build cleanup
+      run: |
+        rm -r dist
+        rm -r build
