@@ -29,6 +29,7 @@ jobs:
     - name: "Build & test"
       run: |
         cd build
+        cd run
         ls
         
     - name: "Create Release"
