@@ -28,7 +28,7 @@ jobs:
         pyinstaller --onefile run.py   
     - name: "Build & test"
       run: |
-        ls dist/run/run
+        ls dist/run
         
     - name: "Create Release"
       uses: "marvinpinto/action-automatic-releases@latest"
