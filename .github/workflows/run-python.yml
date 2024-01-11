@@ -30,7 +30,7 @@ jobs:
         
     - name: "Build & test"
         run: |
-           echo "done!"
+          echo "done!"
       
     - uses: "marvinpinto/action-automatic-releases@latest"
         with:
@@ -39,4 +39,4 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
-             *.exe
+            *.exe
