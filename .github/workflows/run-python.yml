@@ -28,12 +28,14 @@ jobs:
         pyinstaller --onefile run.py   
     - name: "Build & test"
       run: |
-        echo "done!"
-    - uses: "marvinpinto/action-automatic-releases@latest"
+        ls dist/run/run
+        
+    - name: "Create Release"
+      uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "latest"
-        prerelease: true
-        title: "Development Build"
+        prerelease: false
+        title: "Latest Build"
         files: |
           dist/run.exe
