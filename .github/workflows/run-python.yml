@@ -42,7 +42,7 @@ jobs:
           dist/run
   BuildForMac:
     needs: build
-    runs-on: macos-latest
+    runs-on: windows-latest
     permissions:
       contents: write
       
