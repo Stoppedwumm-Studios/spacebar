@@ -71,6 +71,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: [BuildForMac, build]
     steps:
+      - name: Prepare Checkout
+        uses: actions/checkout@v3
       - uses: actions/download-artifact@master
         with:
           name: buildLinux
@@ -93,3 +95,4 @@ jobs:
           files: |
             dist/run
             dist/run.exe
+            info/license/README.md
