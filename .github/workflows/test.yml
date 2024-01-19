@@ -4,6 +4,8 @@ on:
   check_run:
     types: [rerequested, completed]
   pull_request:
+
+  status:
     
   workflow_dispatch:
 
