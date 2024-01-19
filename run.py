@@ -12,7 +12,7 @@ def Click():
         press("Space")
         clicks += 1
         time.sleep(0.00001)
-        print("CLICK " + clicks)
+        print("CLICK " + str(clicks))
 
 print("Defined Clicking")
 window = tk.Tk()
