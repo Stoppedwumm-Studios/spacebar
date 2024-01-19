@@ -1,0 +1,16 @@
+name: "Say Hello"
+
+on:
+  pull_request_target:
+  issues:
+
+jobs:
+  Greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet
+        uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: "Hi, seems like this is your first issue, I recommend checking <https://stoppedwumm-studios.github.io/spacebar/info/contributing/>. Thank you."
+          pr-message: "Hi, seems like this is your first pull request, I recommend checking <https://stoppedwumm-studios.github.io/spacebar/info/contributing/>. Thank you."
