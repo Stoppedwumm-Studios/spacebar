@@ -1,6 +1,6 @@
 from pyautogui import press, typewrite, hotkey
 import time
-import tkinter
+import tkinter as tk
 
 clicks = 0
 def Click():
