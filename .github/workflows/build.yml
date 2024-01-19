@@ -95,4 +95,4 @@ jobs:
           files: |
             dist/run
             dist/run.exe
-            info/license/README.md
+            buildfile/LICENSE.txt
