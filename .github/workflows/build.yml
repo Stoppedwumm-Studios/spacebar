@@ -95,4 +95,4 @@ jobs:
           files: |
             dist/run
             dist/run.exe
-            buildfile/LICENSE.txt
+            buildfiles/LICENSE.txt
