@@ -12,7 +12,9 @@ def Click():
         press("Space")
         clicks += 1
         time.sleep(0.00001)
+        print("CLICK " + clicks)
 
+print("Defined Clicking")
 window = tk.Tk()
 greeting = tk.Label(window, text="Click 120 Times")
 schaltf1 = tk.Button(window, text="Do it (:<", command=Click)
@@ -22,6 +24,7 @@ greeting.pack()
 schaltf1.pack()
 credit.pack()
 site.pack()
+print("Window prepared")
 window.mainloop()
 
 print("Window closed")
