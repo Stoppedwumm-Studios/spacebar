@@ -10,6 +10,8 @@ def Click():
         time.sleep(0.00001)
 
 window = tk.Tk()
-schaltf1 = tk.Button(window, text="Aktion durchführen", command=Click)
+greeting = tk.Label(window, text="Click 120 Times")
+schaltf1 = tk.Button(window, text="Do it (:<", command=Click)
+greeting.pack()
 schaltf1.pack()
-window.mainloop()        
+window.mainloop()
