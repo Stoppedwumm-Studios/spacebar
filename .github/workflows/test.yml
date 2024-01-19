@@ -16,7 +16,7 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  TestBuildForLinux:
     runs-on: ubuntu-latest
 
     steps:
@@ -37,7 +37,7 @@ jobs:
       run: |
         cd dist
         chmod +x run
-  BuildForWindows:
+  TestBuildForWindows:
     runs-on: windows-latest
     permissions:
       contents: write
