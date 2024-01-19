@@ -1,2 +1,3 @@
 pyautogui
 auto-py-to-exe
+tkinter
