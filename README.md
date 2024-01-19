@@ -1,2 +1,2 @@
 # A spacebar clicker
-Built for Linux/Ubuntu.
+Built for Linux/Ubuntu/Windows.
