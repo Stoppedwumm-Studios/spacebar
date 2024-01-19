@@ -2,6 +2,10 @@ from pyautogui import press, typewrite, hotkey
 import time
 import tkinter as tk
 
+print("Made by Stoppedwumm-Studios")
+
+print("https://github.com/Stoppedwumm-Studios/spacebar")
+
 def Click():
     clicks = 0
     while clicks < 110:
