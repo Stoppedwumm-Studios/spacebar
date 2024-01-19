@@ -1,13 +1,7 @@
 name: Test by building App
 
 on:
-  check_run:
   pull_request:
-    types: [opened, reopened]
-
-  status:
-    
-  workflow_dispatch:
 
 env:
   # Setting an environment variable with the value of a configuration variable
