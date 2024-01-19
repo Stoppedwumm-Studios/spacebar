@@ -9,7 +9,7 @@ Go to <https://github.com/Stoppedwumm-Studios/spacebar/releases/tag/latest> and 
 Run the program, on windows, you have to click after executing on more details and click the button that showed up
 
 ## Contributing
-</info/contributing/>
+[More Info](/info/contributing/)
 
 ## License
-</info/license/>
+[License](/info/license/)
