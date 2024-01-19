@@ -35,3 +35,4 @@ window.mainloop()
 
 print("Window closed")
 print("Closing Process")
+os.system("echo Done")
