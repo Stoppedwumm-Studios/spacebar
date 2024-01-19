@@ -23,3 +23,6 @@ schaltf1.pack()
 credit.pack()
 site.pack()
 window.mainloop()
+
+print("Window closed")
+print("Closing Process")
