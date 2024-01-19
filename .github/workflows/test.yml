@@ -1,0 +1,62 @@
+name: Test by building App
+
+on:
+  check_run:
+    types: [rerequested, completed]
+  pull_request:
+    types: [review_requested]
+    
+  workflow_dispatch:
+
+env:
+  # Setting an environment variable with the value of a configuration variable
+  env_var: ${{ vars.ENV_CONTEXT_VAR }}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download/Load Repo
+      uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Build to exe
+      run: |
+        pyinstaller --onefile run.py   
+    - name: "Make executable"
+      run: |
+        cd dist
+        chmod +x run
+  BuildForWindows:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Prepare Checkout
+        uses: actions/checkout@v3
+      - name: Prepare Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Build to exe
+        run: |
+          pyinstaller --onefile run.py
+      - name: List dist
+        run: |
+          cd dist
+          ls
