@@ -27,11 +27,11 @@ jobs:
         pip install -r requirements.txt
     - name: Build to exe
       run: |
-        pyinstaller --onefile run.py   
+        pyinstaller --onefile app.py   
     - name: "Make executable"
       run: |
         cd dist
-        chmod +x run
+        chmod +x app
   TestBuildForWindows:
     runs-on: windows-latest
     permissions:
@@ -50,7 +50,7 @@ jobs:
           pip install -r requirements.txt
       - name: Build to exe
         run: |
-          pyinstaller --onefile run.py
+          pyinstaller --onefile app.py
       - name: List dist
         run: |
           cd dist
