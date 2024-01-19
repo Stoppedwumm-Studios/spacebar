@@ -8,7 +8,7 @@ print("Made by Stoppedwumm-Studios")
 print("https://github.com/Stoppedwumm-Studios/spacebar")
 
 def OpenClick():
-    os.system("run https://github.com/Stoppedwumm-Studios/spacebar")
+    os.system("https://github.com/Stoppedwumm-Studios/spacebar")
 
 def Click():
     clicks = 0
