@@ -4,7 +4,6 @@ on:
   check_run:
     types: [rerequested, completed]
   pull_request:
-    types: [review_requested]
     
   workflow_dispatch:
 
