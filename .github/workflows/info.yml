@@ -1,0 +1,14 @@
+name: Info for pr
+
+on:
+  pull_request:
+
+jobs:
+  Info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            Hi, I recommend checking <https://stoppedwumm-studios.github.io/spacebar/info/contributing/>. Thank you.
