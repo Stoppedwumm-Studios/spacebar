@@ -1,0 +1,17 @@
+name: Info on Issue
+
+on:
+  issues:
+
+jobs:
+  Comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add comment
+        run: gh issue comment "$NUMBER" --body "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+          BODY: >
+            Hi, I recommend checking <https://stoppedwumm-studios.github.io/spacebar/info/contributing/>. Thank you.
