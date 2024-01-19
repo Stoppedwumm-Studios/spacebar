@@ -2,6 +2,8 @@ from pyautogui import press, typewrite, hotkey
 import time
 import tkinter as tk
 
+print("Made by Stoppedwumm-Studios")
+
 def Click():
     clicks = 0
     while clicks < 110:
