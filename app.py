@@ -19,7 +19,7 @@ def Click():
         time.sleep(0.00001)
         print("CLICK " + str(clicks))
 
-x = threading.Thread(target=Click)
+x = threading.Thread(target=Click, daemon=True)
 
 print("Defined Clicking")
 window = tk.Tk()
