@@ -13,3 +13,6 @@ Run the program, on windows, you have to click after executing on more details a
 
 ## License
 [License](info/license/)
+
+## Github Discussions
+[Github Discussions](https://github.com/Stoppedwumm-Studios/spacebar/discussions)
