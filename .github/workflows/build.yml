@@ -96,3 +96,4 @@ jobs:
             dist/app
             dist/app.exe
             buildfiles/LICENSE.txt
+            buildfiles/please-read.txt
